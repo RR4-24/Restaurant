@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+  </head>
+<body>
+  <!--nav bar-->
+  <ul>
+    <h1 class="title">The Restaurant</h1>
+    <li><a class="active" href="Home.html">Home</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>  
+  <!-- Slide Show -->
+  <div class="div1">
+  <section>
+    <img class="slides div1" src="https://blog.hdwallsource.com/wp-content/uploads/2015/01/italian-food-wallpaper-hd-44478-45604-hd-wallpapers.jpg"
+    style="width:100%">
+    <img class="slides div1" src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fblog.hdwallsource.com%2Fwp-content%2Fuploads%2F2015%2F01%2Fmexican-food-wallpaper-hd-43047-44073-hd-wallpapers.jpg&f=1&nofb=1"
+    style="width:100%">
+    <img class="slides div1" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fstatic.standard.co.uk%2Fs3fs-public%2Fthumbnails%2Fimage%2F2018%2F05%2F01%2F12%2Fmexicanfood.jpg&f=1&nofb=1"
+    style="width:100%">
+  </section>
+</div>
+  <!--menu-->
+  <div class="div2">
+      <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fassets.marthastewart.com%2Fstyles%2Fwmax-1500%2Fd27%2Fmed104695_0609_cheeseburger%2Fmed104695_0609_cheeseburger_sq.jpg%3Fitok%3DExL2zldC&f=1&nofb=1"
+       style="height: 200px; width: 200px;float: left;"><br>
+       <h3 style="text-align: center;">CheeseBurger $2<h3>  
+  </div>
+  <div class="div2">
+    <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.g43Pe6MQbiMdAlGUBKdptgHaHa%26pid%3DApi&f=1"
+     style="height: 200px; width: 200px;float: left;"><br>
+     <h3 style="text-align: center;">Taco $6<h3>  
+</div>
+<div class="div2">
+  <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.delonghi.com%2FGlobal%2Frecipes%2Fmultifry%2Fpizza_fresca.jpg&f=1&nofb=1"
+   style="height: 200px; width: 200px;float: left;"><br>
+   <h3 style="text-align: center;">Cheese pizza $20<h3>  
+</div>
+<div class="div2">
+  <img src="http://2.bp.blogspot.com/-_Bxmm_H9xSg/TZ5BSBwT_qI/AAAAAAAADXo/OjBFrWmMVmU/s1600/IMG_0967.JPG"
+   style="height: 200px; width: 200px;float: left;"><br>
+   <h3 style="text-align: center;">Tomato Pasta $15<h3>  
+</div>
+<div class="div2">
+  <img src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.itslife.in%2Fwp-content%2Fuploads%2F2013%2F10%2Frecipe-rice-fried-rice.jpg&f=1&nofb=1"
+   style="height: 200px; width: 200px;float: left;"><br>
+   <h3 style="text-align: center;">Fried Rice $25<h3>  
+</div>
+<div class="div2">
+  <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.pO4uHE3DqlyJEl1X-vQ5HwHaEK%26pid%3DApi&f=1"
+   style="height: 200px; width: 200px;float: left;"><br>
+   <h3 style="text-align: center;">Piece of Cake $5<h3>  
+</div>
+  <!-- Footer -->
+  <footer class="main">
+    
+    <a href="#"><i class="fa fa-facebook-official"></i></a>
+    <a href="#"><i class="fa fa-pinterest-p"></i></a>
+    <a href="#"><i class="fa fa-twitter"></i></a>
+    <a href="#"><i class="fa fa-flickr"></i></a>
+    <a href="#"><i class="fa fa-linkedin"></i></a>
+  </footer>
+  
+  <script>
+  // Automatic Slideshow - change image every 3 seconds
+  var myIndex = 0;
+  change();
+  
+  function change() {
+    var i;
+    var x = document.getElementsByClassName("slides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}
+    x[myIndex-1].style.display = "block";
+    setTimeout(change, 3000);
+  }
+  </script>
+</body>
+</html> 
